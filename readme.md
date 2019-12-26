@@ -25,6 +25,14 @@ Library:
 * poppler 0.82.0-1
 
 ## How static library was made
+1. build NSS static library. 
+2. Build poppler:
+
+```shell
+./configure --disable-shared --enable-static
+```
+
+## NSS Static library
 NSS static library:
 build instructions:
 * https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/Building
