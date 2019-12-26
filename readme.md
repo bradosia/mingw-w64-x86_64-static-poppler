@@ -26,11 +26,21 @@ Library:
 
 ## How static library was made
 NSS static library:
+build instructions:
+* https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/Building
+
+arcticle build instructions:
 ```shell
 cd /C/mingw/nss-3.48
 nss/build.sh
 ```
 
+with make:
 ```shell
 make CC=gcc
+```
+
+with cmake:
+```shell
+cmake -DBUILD_SHARED_LIBS=ON -DBUILD_STATIC_LIBS=ON -DBUILD_TESTS=ON -G "MinGW Makefiles" -S. -Bbuild
 ```
