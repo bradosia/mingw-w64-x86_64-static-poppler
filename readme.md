@@ -44,3 +44,10 @@ with cmake:
 ```shell
 cmake -DBUILD_SHARED_LIBS=ON -DBUILD_STATIC_LIBS=ON -DBUILD_TESTS=ON -G "MinGW Makefiles" -S. -Bbuild
 ```
+
+### using PKGBUILD
+1. Download the PKGBUILD: https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-nss
+2. In MSYS2:
+```shell
+makepkg-mingw -sCLf
+```
