@@ -31,3 +31,6 @@ cd /C/mingw/nss-3.48
 nss/build.sh
 ```
 
+```shell
+make CC=gcc
+```
