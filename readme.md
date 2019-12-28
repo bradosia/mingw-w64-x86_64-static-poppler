@@ -1,5 +1,5 @@
 # Poppler static libraries for MinGW64
-WARNING! WORK IN PROGRESS...
+## NOT YET WORKING. If someone has the static libraries for poppler for windows with mingw64, then please share!
 Includes a static library linked test program in windows with MinGW64 compiler. All static libraries are prebuilt and included with the executable. 
 
 Features demonstrated:
